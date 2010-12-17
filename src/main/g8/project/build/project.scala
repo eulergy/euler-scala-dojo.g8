@@ -1,6 +1,6 @@
 import sbt._
 
-class MyProject(info: ProjectInfo) extends DefaultProject(info) {
+class MyProject(info: ProjectInfo) extends DefaultProject(info) with Exec {
   	val mavenLocal = "Local Maven Repository" at "file://"+Path.userHome+"/.m2/repository"
   	val scalaSnapshots = "Scala Snapshots repo" at "http://scala-tools.org/repo-snapshots"	
 
