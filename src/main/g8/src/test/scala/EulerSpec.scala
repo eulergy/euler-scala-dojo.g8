@@ -1,4 +1,5 @@
 import org.specs._
+import eulergy.NumberHelpers._
 
 class EulerSpec extends Specification {
   
